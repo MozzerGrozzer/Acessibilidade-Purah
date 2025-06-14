@@ -119,3 +119,29 @@ main{
 }
 
 /* Exemples */
+
+.preCode {
+  background: #111;
+  color: #0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  font-family: 'Fira Code', monospace;
+  overflow-x: auto;
+}
+
+.codeCssExemplo code {
+  display: block;
+  white-space: pre-wrap;
+  font-size: 0.9rem;
+}
+
+.acessibilityTools{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:10%;
+}
+
+.acessibilityToolsText{
+    width: 20%;
+}

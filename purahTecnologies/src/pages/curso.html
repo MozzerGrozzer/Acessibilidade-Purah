@@ -43,6 +43,87 @@
             <p>Exemplo: textos com pouco contraste ou fontes muito pequenas tornam a leitura difícil para quem tem baixa visão. Um botão sem destaque ou feedback visual pode ser invisível para quem navega por teclado.</p>
         </article>
     </section>
-    
+    <section class="exemples">
+        <div class="exemplesText">
+            <h3>Exemplos de boas práticas</h3>
+            <p>Exemplos visuais para um design digital acessível</p>
+        </div>
+        <article class="codeCssExemplo">
+            <h3>1. Exemplo de foco visível com CSS</h3>
+            <p>Sempre use contraste suficiente entre o texto e fundo</p>
+            <div class="preCode">
+                <pre><code>
+                    :focus-visible {
+                    outline: 2px solid #000;
+                    outline-offset: 2px;
+                    }
+                </code></pre>
+            </div>
+        </article>
+    </section>
+        <article class="codeCssExemplo">
+            <h3>2. Tipografia visível</h3>
+            <p>Tamanho mínimo recomendado: 16px (1rem)</p>
+            <div class="preCode">
+                <pre><code>
+                    body {
+                    font-size: 1rem;
+                    line-height: 1.6;
+                    font-family: system-ui, sans-serif;
+                    }
+                </code></pre>
+            </div>
+        </article>
+        <article class="codeCssExemplo">
+            <h3>3.Tamanho e espaçamento de fonte</h3>
+            <p>Sempre mostre visualmente o foco de elementos interativos</p>
+            <div class="preCode">
+                <pre><code>
+                    :focus-visible {
+                    outline: 2px solid #000;
+                    outline-offset: 2px;
+                    }
+                </code></pre>
+            </div>
+        </article>
+        <article class="codeCssExemplo">
+            <h3>4.Ícones e cores com propósito</h3>
+            <p>Use ícones, texto ou padrões junto da cor</p>
+            <div class="preCode">
+                <pre><code>
+                    // Exemplo bom: botão de alerta
+                    &lt;button class="alert" aria-label="Erro: acesso negado"&gt;
+                    ⚠ Acesso negado
+                    &lt;/button&gt;
+                </code></pre>
+            </div>
+        </article>
+        <article class="codeCssExemplo">
+            <h3>5.Tema escuro e preferências do usuário</h3>
+            <p>Use @media (prefers-color-scheme: dark) para adaptar o tema ao usuário</p>
+            <div class="preCode">
+                <pre><code>
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+    color: #fff;
+  }
+}
+  </code></pre>
+            </div>
+        </article>
+    </section>
+    <section class="acessibilityTools">
+        <aside class="acessibilityToolsText">
+            <h3>Sites para testar e validar Acessibilidade</h3>
+            <p>Para fazer ter um verdadeiro design acessível é necessário testes! Pequenos ajustes visuais podem impactar diretamente na experiência de navegação de alguém</p>
+        </aside>
+        
+        <ul class="acessibilityToolsNav">
+            <li><a href="https://wave.webaim.org/">WAVE</a> analisa contrastes, hierarquia e navegação</li>
+            <li><a href="https://www.deque.com/axe/devtools/">axe DevTools</a> extensão para Chrome/Firefox que avalia diretamente no navegador</li>
+            <li><a href="https://webaim.org/resources/contrastchecker/">Contrast Checker</a> Verifica a proporção entre texto e fundo</li>
+        </ul>
+    </section>
 </body>
 </html>
