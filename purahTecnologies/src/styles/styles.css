@@ -1,3 +1,4 @@
+@import url(./global.css);
 *{
     padding:0;
     margin: 0;
@@ -8,5 +9,113 @@
 }
 
 body{
-    background:radial-gradient(to bottom );
+    background:radial-gradient(to bottom #F8FBFF, #BFCAD8);
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1rem;
+    line-height: 1.6;
 }
+/* Header */
+
+header{
+    border:1px solid black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top:20%;
+    width: 90%;
+    padding:3%;
+}
+
+.headerLinks{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#headerLogo{
+    width: 20%;
+}
+
+
+/* main */
+main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:10%;
+    position: relative;
+}
+#mainCharacter{
+    position: absolute;
+    width: 10%;
+}
+#mainLogo{
+    width: 40%;
+}
+
+/* onboard */
+
+.onboard{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:5%;
+}
+
+.onboardText{
+    padding: 5%;
+}
+
+.courseStart{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:5%;
+}
+
+.courseStart>button{
+    width: 100px;
+    height: 50px;
+    padding:10px 20px;
+}
+
+/* Course */
+
+/* introduction */
+
+.introduction{
+    display:flex;
+    justify-content: space-between;
+    padding: 10%;
+}
+
+.introductionArticle{
+    display:flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+/* content */
+
+.content{
+    display:flex;
+    justify-content: space-between;
+    padding: 10%;
+}
+
+.contentArticle{
+    display:flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+/* Exemples */
