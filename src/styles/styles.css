@@ -1,0 +1,255 @@
+@import url(./global.css);
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    border:none;
+}
+
+body{
+    background:radial-gradient(to bottom #F8FBFF, #BFCAD8);
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+/* Header */
+
+header{
+    border:1px solid black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    padding:3%;
+    margin:2%;
+    border: 3px solid var(--shadePrimaria);
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px var(--shadePrimaria);
+}
+
+.headerLinks{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:70px;
+    font-size: 1.1em;
+}
+
+header>button{
+    padding:1% 5%;
+    font-size: 1em;
+    background-color: var(--corSecundaria);
+    color:var(--corPrimaria);
+}
+
+#headerLogo{
+    width: 20%;
+}
+
+
+/* main */
+main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:10%;
+    position: relative;
+}
+#mainCharacter{
+    position: absolute;
+    width: 20%;
+    right:10%;
+    z-index: -1;
+}
+#mainLogo{
+    width: 40%;
+}
+
+/* Footer */
+
+footer{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    padding:1% 5%;
+}
+
+/* onboard */
+
+.onboard{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2% 10%;
+    margin: 1% 5%;
+    border: 3px solid var(--shadePrimaria);
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px var(--shadePrimaria);
+}
+
+.onboardText>h2{
+    font-size: 2em;
+}
+
+.courseStart{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.courseStart>p{
+    width: 70%;
+    text-align: center;
+}
+.courseStart>button{
+    width: 100px;
+    height: 50px;
+    margin:5%;
+    padding:1% 5%;
+    font-size: 1em;
+    background-color: var(--corSecundaria);
+}
+
+.courseStart>button>a{
+    color: var(--corPrimaria)
+}
+
+/* Footer */
+
+footer{
+    background-color: var(--corSecundaria);
+    width: 100%;
+    padding: 5%;
+    color:white;
+}
+
+.footerLinks>nav>a{
+    color:white;
+    display:flex;
+    flex-direction: column;
+}
+
+/* Course */
+
+/* introduction */
+
+.introduction{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 6% 10%;
+    margin: 1% 5%;
+    border: 3px solid var(--shadePrimaria);
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px var(--shadePrimaria);
+}
+
+.introductionArticle{
+    display:flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+/* content */
+
+.content{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 6% 10%;
+    margin:1% 5%;
+    border: 3px solid var(--shadePrimaria);
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px var(--shadePrimaria);
+}
+
+.contentArticle{
+    display:flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+/* exemples */
+
+.exemples{
+    padding:6%;
+    margin:1% 5%;
+    border: 3px solid var(--shadePrimaria);
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px var(--shadePrimaria);
+}
+
+.codeCssExemplo{
+    padding:5%;
+}
+
+/* acesibility tools */
+
+.acessibilityTools{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding:3% 5%;
+    margin:1% 5%;
+    border: 3px solid var(--shadePrimaria);
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px var(--shadePrimaria);
+}
+
+.acessibilityToolsText{
+    width: 20%;
+}
+
+/* pre codes */
+
+.preCode {
+  background: var(--shadePrimaria);
+  color: black;
+  padding: 1rem;
+  border-radius: 8px;
+  font-family: 'Fira Code', monospace;
+  overflow-x: auto;
+}
+
+#exemploUm{
+    color: #999;
+    background-color: #ccc;
+}
+
+#exemploDois{
+    color: #111;
+    background-color: #fff;
+}
+
+.codeCssExemplo code {
+  display: block;
+  white-space: pre-wrap;
+  font-size: 0.9rem;
+}
+
+/* Focus */
+
+:focus-visible{
+    outline: 2px solid var(--vermelho);
+    outline-offset: 2px;
+}
+
+/* end page */
+
+.endPage{
+    padding:1%;
+}
+#minhaLogo{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 20%;
+}

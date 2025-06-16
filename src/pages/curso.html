@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/img/icons/logoPretaPurahTecnologies.svg" alt="" id="headerLogo">
+        <nav class="headerLinks">
+            <a href="">Tecnologia</a>
+            <a href="">Biologia</a>
+            <a href="">Sobre nós</a>
+        </nav>
+        <button>
+            <p>Agendamentos</p>
+        </button>
+    </header>
+    <main>
+        <h1 tabindex="0">Acessibilidade Digital</h1>
+        <p>apresentado por:</p>
+        <img src="../assets/img/icons/logoPurahTecnologies.svg" alt="">
+    </main>
+    <section class="introduction" tabindex="0">
+        <aside class="introductionText">
+            <h3>O que é acessibilidade?</h3>
+            <p>Um direito para todos!</p>
+        </aside>
+        <article class="introductionArticle">
+            <p>Acessibilidade digital é o conjunto de práticas que garantem que qualquer pessoa, independentemente de suas habilidades físicas, sensoriais ou cognitivas, possa navegar, entender e interagir com conteúdos na web.</p>
+            <p>Isso inclui pessoas com deficiências visuais, baixa visão, daltonismo, dislexia, limitações motoras, entre outras condições.</p>
+            <p>Tornar um site acessível não é apenas um diferencial técnico — é um direito humano e uma forma de inclusão.</p>
+            <p>Assim, todos poderão ser um só em relação ao pensamento saudável da acessibilidade!</p>
+        </article>
+    </section>
+    <section class="content" tabindex="0">
+        <aside class="contentText">
+            <h3>O que seria um Design Acessível?</h3>
+            <p>Um design destinado a todos</p>
+        </aside>
+        <article class="contentArticle">
+            <p>Design visual acessível é o uso consciente de cores, contrastes, tipografia, espaçamento e estrutura para tornar o conteúdo da web fácil de ler, entender e navegar.
+            <p>Um design acessível não depende apenas da visão perfeita, da leitura rápida ou da precisão do mouse. Ele respeita os limites de percepção e garante que a forma nunca atrapalhe a função.</p>
+            <p>Exemplo: textos com pouco contraste ou fontes muito pequenas tornam a leitura difícil para quem tem baixa visão. Um botão sem destaque ou feedback visual pode ser invisível para quem navega por teclado.</p>
+            <p>Claro, esses não são apenas aplicáveis para designs digitais, esse é apenas uma recomendação geral para inclusão e acessibilidade!</p>
+        </article>
+    </section>
+    <section class="exemples" tabindex="0">
+        <div class="exemplesText">
+            <h3>Exemplos de boas práticas</h3>
+            <p>Exemplos visuais para um design digital acessível</p>
+        </div>
+        <article class="codeCssExemplo" tabindex="0">
+            <h3>1. Exemplo de foco visível com CSS</h3>
+            <p>Sempre use contraste suficiente entre o texto e fundo</p>
+            <div class="preCode">
+                <pre><code>
+                    /* Exemplo ruim */
+                    color: #999;
+                    background-color: #ccc;
+                    <p id="exemploUm">exemplo</p>
+
+                    /* Exemplo bom */
+                    color: #111;
+                    background-color: #fff;
+
+                    <p id="exemploDois">exemplo</p>
+                </code></pre>
+            </div>
+        </article>
+        <article class="codeCssExemplo" tabindex="0">
+            <h3>2. Tipografia visível</h3>
+            <p>Tamanho mínimo recomendado: 16px (1rem)</p>
+            <div class="preCode">
+                <pre><code>
+                    body {
+                    font-size: 1rem;
+                    line-height: 1.6;
+                    font-family: system-ui, sans-serif;
+                    }
+                </code></pre>
+            </div>
+        </article>
+        <article class="codeCssExemplo" tabindex="0">
+            <h3>3.Tamanho e espaçamento de fonte</h3>
+            <p>Sempre mostre visualmente o foco de elementos interativos</p>
+            <div class="preCode">
+                <pre><code>
+                    :focus-visible {
+                    outline: 2px solid #000;
+                    outline-offset: 2px;
+                    }
+                </code></pre>
+            </div>
+        </article>
+        <article class="codeCssExemplo" tabindex="0">
+            <h3>4.Ícones e cores com propósito</h3>
+            <p>Use ícones, texto ou padrões junto da cor</p>
+            <div class="preCode">
+                <pre><code>
+                    // Exemplo bom: botão de alerta
+                    &lt;button class="alert" aria-label="Erro: acesso negado"&gt;
+                    ⚠ Acesso negado
+                    &lt;/button&gt;
+                </code></pre>
+            </div>
+        </article>
+        <article class="codeCssExemplo" tabindex="0">
+            <h3>5.Tema escuro e preferências do usuário</h3>
+            <p>Use @media (prefers-color-scheme: dark) para adaptar o tema ao usuário</p>
+            <div class="preCode">
+                <pre><code>
+                    @media (prefers-color-scheme: dark) {
+                    body {
+                        background-color: #000;
+                        color: #fff;
+                    }
+                    }
+                </code></pre>
+            </div>
+        </article>
+    </section>
+    <section class="acessibilityTools" tabindex="0">
+        <aside class="acessibilityToolsText">
+            <h3>Sites para testar e validar Acessibilidade</h3>
+            <p>Para fazer ter um verdadeiro design acessível é necessário testes! Pequenos ajustes visuais podem impactar diretamente na experiência de navegação de alguém</p>
+        </aside>
+
+        <ul class="acessibilityToolsNav" tabindex="0">
+            <li><a href="https://wave.webaim.org/">WAVE</a> analisa contrastes, hierarquia e navegação</li>
+            <li><a href="https://www.deque.com/axe/devtools/">axe DevTools</a> extensão para Chrome/Firefox que avalia diretamente no navegador</li>
+            <li><a href="https://webaim.org/resources/contrastchecker/">Contrast Checker</a> Verifica a proporção entre texto e fundo</li>
+        </ul>
+    </section>
+    <footer>
+        <aside class="footerLogo">
+            <a href="../../index.html">
+                <img src="../assets/img/icons/logoBrancaPurahTecnologies.svg" alt="">
+            </a>
+            <p>Lembre-se de quem os criou</p>
+        </aside>
+        <aside class="footerLinks">
+            <p>Navegação</p>
+            <nav>
+                <a href="">link 1</a>
+                <a href="">link </a>
+            </nav>
+        </aside>
+    </footer>
+</body>
+</html>
