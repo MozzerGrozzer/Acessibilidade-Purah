@@ -9,12 +9,13 @@
 }
 
 body{
-    background:radial-gradient(to bottom #F8FBFF, #BFCAD8);
+    background:linear-gradient(to bottom, #F8FBFF 80%, #BFCAD8 100%);
     width: 100%;
     height: 100%;
     flex-direction: column;
     font-size: 1rem;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 /* Header */
 
@@ -25,7 +26,7 @@ header{
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    width: 90%;
+    width: 95%;
     padding:3%;
     margin:2%;
     border: 3px solid var(--shadePrimaria);
@@ -80,7 +81,7 @@ main{
   padding: 0px 100%;
   margin: 0px 100%;
   font-family: 'Fira Code', monospace;
-  animation: marquee 80s linear infinite;
+  animation: marquee 110s linear infinite;
   cursor: default;
 }
 
@@ -112,9 +113,9 @@ main{
 
 .onboard{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 2% 10%;
+    padding: 2% 5%;
     margin: 1% 5%;
     border: 3px solid var(--shadePrimaria);
     border-radius: 20px;
@@ -122,8 +123,22 @@ main{
     background: white;
 }
 
+.onboardText{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
 .onboardText>h2{
     font-size: 2em;
+    font-family: "Anton", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.onboardText>h2{
+    text-align: center;
 }
 
 .courseStart{
@@ -137,17 +152,17 @@ main{
     width: 70%;
     text-align: center;
 }
-.courseStart>button{
+.courseStart>a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     width: 100px;
     height: 50px;
-    margin:5%;
+    margin-top:20px;
     padding:1% 5%;
     font-size: 1em;
+    color:var(--corPrimaria);
     background-color: var(--corSecundaria);
-}
-
-.courseStart>button>a{
-    color: var(--corPrimaria)
 }
 
 /* Footer */
