@@ -62,7 +62,37 @@ main{
     flex-direction: column;
     padding:10%;
     position: relative;
+    cursor:default;
 }
+
+.marquee {
+  width: 43%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+
+.marqueeText {
+  display: inline-block;
+  background: black;
+  color:var(--corPrimaria);
+  padding: 0px 100%;
+  margin: 0px 100%;
+  font-family: 'Fira Code', monospace;
+  animation: marquee 80s linear infinite;
+  cursor: default;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+#textHidden{
+    color:rgb(98, 4, 4);
+}
+
 #mainCharacter{
     position: absolute;
     width:50%;
@@ -123,9 +153,11 @@ main{
 /* Footer */
 
 footer{
+    display:flex;
+    justify-content: space-between;
     background-color: var(--corSecundaria);
     width: 100%;
-    padding: 5%;
+    padding: 5% 10%;
     color:white;
 }
 
