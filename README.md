@@ -13,5 +13,6 @@
 <p>Isso garante o contínuo uso de boas práticas, uma visão acessível e vai impedir o arduo trabalho mudar todas as tags pelas suas alternativas semâniticas no futuro.</p>
 
 <h3>Karsater CORP.</h3>
-<P>O conteúdo do site apenas serve para manter o storytelling, por isso há alguns flares e coisas estranhas acontecendo ao redor da página, mas tudo é com intenções de mostrar uma sequênca de acontecimentos que levam até o que a Purah é hoje.
+<P>O conteúdo do site apenas serve para manter o storytelling, por isso há alguns flares e coisas estranhas acontecendo ao redor da página, mas tudo é com intenções de mostrar uma sequênca de acontecimentos que levam até o que a Purah é hoje.</p>
+
 <img src="./src/assets/img/Velvet e Purah.svg" width="80%">
