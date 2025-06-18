@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img src="../assets/img/icons/logoPretaPurahTecnologies.svg" alt="logo marca da Purah Tecnologies" id="headerLogo">
+        <img src="../assets/img/icons/KarsaterLogoPreta.svg" alt="logo marca de Karsater" id="headerLogo">
         <nav class="headerLinks">
             <a href="">Tecnologia</a>
             <a href="">Biologia</a>
@@ -20,9 +20,16 @@
     </header>
     <main>
         <div class="logoMarkMain" tabindex="0">
-            <h1>Acessibilidade Digital</h1>
-            <p>apresentado por:</p>
-            <img src="../assets/img/icons/logoPurahTecnologies.svg" alt="Logomark de Purah Tecnologies" id="CourseMainLogo">
+            <aside class="logoMarkMainText">
+                <h1>Acessibilidade Digital</h1>
+                <p>apresentado por:</p>
+                <img src="../assets/img/icons/karsaterLogoCorPreta.svg" alt="Logomark de Karsater" id="CourseMainLogo">
+                <p>Ao lado: Uma antiga foto de Purah Richer Karsater fazendo sua própria apresentação de acessibilidade digital em um quadro digital. Um tema importante e pessoal para ela já que nasceu com um atrofia muscular.</p>
+            </aside>
+            <aside class="logoMarkMainImg">
+                <img src="../assets/img/purahJovemCurso.jpg" alt="" id="purahJovem">
+                <p>Karsater Purah ensinando acessibiliade digital, 2007, foto tirada por um funcionário da ex-corporação RavenTec</p>
+            </aside>            
         </div>        
     </main>
     <section class="introduction" tabindex="0">
@@ -55,7 +62,7 @@
             <p>Exemplos visuais para um design digital acessível</p>
         </div>
         <article class="codeCssExemplo" tabindex="0">
-            <h3>1. Exemplo de foco visível com CSS</h3>
+            <h3>1. Tipografia visível</h3>
             <p>Sempre use contraste suficiente entre o texto e fundo</p>
             <div class="preCode">
                 <pre><code>
@@ -73,7 +80,7 @@
             </div>
         </article>
         <article class="codeCssExemplo" tabindex="0">
-            <h3>2. Tipografia visível</h3>
+            <h3>2. Exemplo de foco visível com CSS </h3>
             <p>Tamanho mínimo recomendado: 16px (1rem)</p>
             <div class="preCode">
                 <pre><code>
@@ -136,9 +143,17 @@
             <li><a href="https://webaim.org/resources/contrastchecker/">Contrast Checker</a> Verifica a proporção entre texto e fundo</li>
         </ul>
     </section>
+    <section class="cursoFinal">
+        <button id="finalizarCursoBtn">Acabar o curso</button>
+            <div id="popup" class="popup hidden" role="alert" aria-live="assertive">
+            <p>Você acabou o curso, parabéns!!</p>
+            <button id="voltarHomeBtn" class="hidden">Voltar para a Home</button>
+        </div>
+    </section>
+
     <footer>
         <aside class="footerLogo">
-            <img src="../assets/img/icons/logoBrancaPurahTecnologies.svg" alt="logo marca da Purah Tecnologies">
+            <img src="../assets/img/icons/KarsaterLogoBranca.svg" alt="logo marca de Karsater">
             <p>Lembre-se de quem os criou</p>
         </aside>
         <aside class="footerLinks">
@@ -150,5 +165,6 @@
             </nav>
         </aside>
     </footer>
+    <script src="../js/curso.js"></script>
 </body>
 </html>

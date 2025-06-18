@@ -189,11 +189,41 @@ footer{
     flex-direction: column;
 }
 
-/* Course */
+/* Course curso html*/
+
+/* main */
+.logoMarkMain{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logoMarkMainText{
+    width: 50%;
+}
+
+.logoMarkMainImg{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left:3%;
+}
+
+.logoMarkMainImg>p{
+    color:var(--corSecundaria)
+}
+
+#purahJovem{
+    width: 100%;
+    border: 5px solid var(--shadePrimaria);
+    border-radius: 20px;
+}
 
 /* introduction */
 
 .introduction{
+    background-color: var(--corPrimaria);
     display:flex;
     justify-content: space-evenly;
     padding: 6% 10%;
@@ -219,6 +249,7 @@ footer{
     border: 3px solid var(--shadePrimaria);
     border-radius: 20px;
     box-shadow: 5px 10px 10px var(--shadePrimaria);
+    background-color: var(--corPrimaria);
 }
 
 .contentArticle{
@@ -239,6 +270,7 @@ footer{
     border: 3px solid var(--shadePrimaria);
     border-radius: 20px;
     box-shadow: 5px 10px 10px var(--shadePrimaria);
+    background-color: var(--corPrimaria);
 }
 
 .exemplesText{
@@ -264,11 +296,59 @@ footer{
     border: 3px solid var(--shadePrimaria);
     border-radius: 20px;
     box-shadow: 5px 10px 10px var(--shadePrimaria);
+    background-color: var(--corPrimaria);
 }
 
 .acessibilityToolsText{
     width: 20%;
 }
+
+/* curso final */
+
+.cursoFinal{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding:3% 5%;
+    margin:1% 5%;
+    border: 3px solid var(--shadePrimaria);
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px var(--shadePrimaria);
+    background-color: var(--corPrimaria);
+}
+
+#finalizarCursoBtn{
+    padding:1% 5%;
+    font-size: 1em;
+    background-color: var(--corSecundaria);
+    color:var(--corPrimaria);    
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffffee;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  z-index: 1000;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+body.popup-active {
+  background-image: url('../assets/img/goodgirlOne.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out;
+}
+
 
 /* pre codes */
 
