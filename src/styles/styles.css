@@ -318,25 +318,42 @@ footer{
     background-color: var(--corPrimaria);
 }
 
-#finalizarCursoBtn{
-    padding:1% 5%;
-    font-size: 1em;
-    background-color: var(--corSecundaria);
-    color:var(--corPrimaria);    
+#finalizarCursoBtn {
+  background: #ff5500;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#finalizarCursoBtn:hover {
+  background: #ff2200;
+  transform: scale(1.05);
 }
 
 .popup {
+  display: none;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #ffffffee;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  z-index: 1000;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: url('../assets/img/goodgirlOneAndAHalf.jpg') no-repeat center center;
+  background-size: cover;
+  z-index: 9999;
 }
+
+.popup.active {
+  display: block;
+}
+
+.popup-active {
+  overflow: hidden;
+  height: 100vh;
+}
+
 
 .popup.hidden {
   display: none;
@@ -344,8 +361,10 @@ footer{
 
 body.popup-active {
   background-image: url('../assets/img/goodgirlOne.jpg');
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:bottom;
+  overflow: hidden;
   transition: background-image 0.5s ease-in-out;
 }
 
