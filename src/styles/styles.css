@@ -319,20 +319,20 @@ footer{
 }
 
 #finalizarCursoBtn {
-  background: #ff5500;
-  color: white;
+  background: var(--corSecundaria);
+  color: var(--corPrimaria);
   font-weight: bold;
   border: none;
   padding: 1rem 2rem;
   font-size: 1.2rem;
   border-radius: 1rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s;
 }
 
 #finalizarCursoBtn:hover {
-  background: #ff2200;
-  transform: scale(1.05);
+    transition: 60s;
+  background: var(--vermelho);
 }
 
 .popup {

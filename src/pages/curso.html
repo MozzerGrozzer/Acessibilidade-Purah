@@ -20,21 +20,21 @@
     </header>
     <main>
         <div class="logoMarkMain" tabindex="0">
-            <aside class="logoMarkMainText">
+            <aside class="logoMarkMainText" tabindex="0">
                 <h1>Acessibilidade Digital</h1>
                 <p>apresentado por:</p>
                 <img src="../assets/img/icons/karsaterLogoCorPreta.svg" alt="Logomark de Karsater" id="CourseMainLogo">
                 <p>Ao lado: Uma antiga foto de Purah Richer Karsater fazendo sua própria apresentação de acessibilidade digital em um quadro digital. Um tema importante e pessoal para ela já que nasceu com um atrofia muscular.</p>
             </aside>
-            <aside class="logoMarkMainImg">
-                <img src="../assets/img/purahJovemCurso.jpg" alt="" id="purahJovem">
+            <aside class="logoMarkMainImg" tabindex="0">
+                <img src="../assets/img/purahJovemCurso.jpg" alt="Jovem Karsater apresentando conceitos de acessibilidade digital na antiga RavenTec em 2007" id="purahJovem">
                 <p>Karsater Purah ensinando acessibiliade digital, 2007, foto tirada por um funcionário da ex-corporação RavenTec</p>
             </aside>            
         </div>        
     </main>
     <section class="introduction" tabindex="0">
         <aside class="introductionText">
-            <h3>O que é acessibilidade?</h3>
+            <h2>O que é acessibilidade?</h2>
             <p>Um direito para todos!</p>
         </aside>
         <article class="introductionArticle">
@@ -46,7 +46,7 @@
     </section>
     <section class="content" tabindex="0">
         <aside class="contentText">
-            <h3>O que seria um Design Acessível?</h3>
+            <h2>O que seria um Design Acessível?</h2>
             <p>Um design destinado a todos</p>
         </aside>
         <article class="contentArticle">
@@ -58,11 +58,11 @@
     </section>
     <section class="exemples" tabindex="0">
         <div class="exemplesText">
-            <h3>Exemplos de boas práticas</h3>
+            <h2>Exemplos de boas práticas</h2>
             <p>Exemplos visuais para um design digital acessível</p>
         </div>
         <article class="codeCssExemplo" tabindex="0">
-            <h3>1. Tipografia visível</h3>
+            <h2>1. Tipografia visível</h2>
             <p>Sempre use contraste suficiente entre o texto e fundo</p>
             <div class="preCode">
                 <pre><code>
@@ -80,7 +80,7 @@
             </div>
         </article>
         <article class="codeCssExemplo" tabindex="0">
-            <h3>2. Exemplo de foco visível com CSS </h3>
+            <h2>2. Exemplo de foco visível com CSS </h2>
             <p>Tamanho mínimo recomendado: 16px (1rem)</p>
             <div class="preCode">
                 <pre><code>
@@ -93,7 +93,7 @@
             </div>
         </article>
         <article class="codeCssExemplo" tabindex="0">
-            <h3>3.Tamanho e espaçamento de fonte</h3>
+            <h2>3.Tamanho e espaçamento de fonte</h2>
             <p>Sempre mostre visualmente o foco de elementos interativos</p>
             <div class="preCode">
                 <pre><code>
@@ -105,7 +105,7 @@
             </div>
         </article>
         <article class="codeCssExemplo" tabindex="0">
-            <h3>4.Ícones e cores com propósito</h3>
+            <h2>4.Ícones e cores com propósito</h2>
             <p>Use ícones, texto ou padrões junto da cor</p>
             <div class="preCode">
                 <pre><code>
@@ -117,7 +117,7 @@
             </div>
         </article>
         <article class="codeCssExemplo" tabindex="0">
-            <h3>5.Tema escuro e preferências do usuário</h3>
+            <h2>5.Tema escuro e preferências do usuário</h2>
             <p>Use @media (prefers-color-scheme: dark) para adaptar o tema ao usuário</p>
             <div class="preCode">
                 <pre><code>
@@ -133,7 +133,7 @@
     </section>
     <section class="acessibilityTools" tabindex="0">
         <aside class="acessibilityToolsText">
-            <h3>Sites para testar e validar Acessibilidade</h3>
+            <h2>Sites para testar e validar Acessibilidade</h2>
             <p>Para fazer ter um verdadeiro design acessível é necessário testes! Pequenos ajustes visuais podem impactar diretamente na experiência de navegação de alguém</p>
         </aside>
 
@@ -145,11 +145,13 @@
     </section>
 
     <section class="cursoFinal">
-        <button id="finalizarCursoBtn">Acabar curso</button>
+        <button id="finalizarCursoBtn" tabindex="0">
+            Acabar curso
+        </button>
         <div class="popup">
-            <h2 style="color: white; text-align: center; padding-top: 20vh;">Você acabou o curso, parabéns!!</h2>
+            <h3 style="color: white; text-align: center; padding-top: 20vh;">Você acabou o curso, parabéns!!</h3>
         </div>
-        <p id="mensagemErro" style="display: none; text-align: center; font-family: monospace; color: red; margin-top: 2rem;">
+        <p id="mensagemErro" style="display: none; text-align: center; font-family: monospace; color: rgb(0, 0, 0); margin-top: 2rem;">
             [elemento não encontrado]
         </p>
     </section>
