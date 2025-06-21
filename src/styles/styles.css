@@ -381,6 +381,42 @@ main{
     font-size: 1.2em;
 }
 
+/* biologias */
+
+/* rato status */
+
+.ratoStatus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2% 5%;
+    margin: 1% 5%;
+    border: 3px solid var(--shadeAlternativo);
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px var(--shadeAlternativo);
+    background-color: #d96e21;
+}
+
+.ratoStatusGrid{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap:10%;
+}
+
+.ratoCard{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.ratoCard>h4{
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
 /* Footer */
 

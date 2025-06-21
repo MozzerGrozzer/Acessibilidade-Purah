@@ -4,6 +4,9 @@
     --corSecundaria: #2C334C;
     --vermelho: #d82323;
 
-    --corAlternativa: #d96e21;
-    --shadeAlternativo: #eec1a1;
+    --primariaAlternativa1: #d96e21; /* teste */
+    --shadeAlternativo1: #eec1a1; /* teste */
+
+    --primariaAlternativa2: #21d927; /* teste */
+    --shadeAlternativo2: #a5eea1; /* teste */
 }
