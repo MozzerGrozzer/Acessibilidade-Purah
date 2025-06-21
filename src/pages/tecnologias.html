@@ -57,41 +57,28 @@
             </article>
 
             <article class="techArticle">
-                <h3>Purah Richer visita OMS</h3>
-                <p>Um passo importante para Karsater!</p>
-            
-            <button class="expand-btn" aria-expanded="false" aria-controls="news2">
-                Ler mais
-            </button>
-            
-            <div id="news2" class="extra-content" hidden>
-                <p>isso deve ser outra</p>
-            </div>
-            </article>
-
-            <article class="techArticle">
-                <h3>Purah Richer visita OMS</h3>
-                <p>Um passo importante para Karsater!</p>
+                <h3>Descoberta importantes sobre Raves!</h3>
+                <p>O evento "Rave" é o contato do sangue com o Biocomposto NB-F, o que faz o composto biológico volátil e violento. Mas assim como os Flocos, Raves podem ter sua própria iteligência e personalidade. Ainda sim, testes estão sendo conduzidos.</p>
             
             <button class="expand-btn" aria-expanded="false" aria-controls="news3">
                 Ler mais
             </button>
             
             <div id="news3" class="extra-content" hidden>
-                <p>isso deve ser outra</p>
+                <p>Por anos uma das principais preocauções com a interação do Biocomposto NB-F foi o do sangue, no contato com o sangue, o composto toma uma coloração laranja e fica com sinapses relacionada a raiva e vingança. Mas o que parecia apenas uma corrupção está se revelando cada vez mais como uma alternativa. Ainda sim, é não encorajamos nossos clientes a interagir com sangue perto de nossos produtos!</p>
             </div>
             </article>
 
             <article class="techArticle">
-                <h3>Purah Richer visita OMS</h3>
-                <p>Um passo importante para Karsater!</p>
+                <h3>Mais um posto de Karsater criado na Africa do Sul!</h3>
+                <p>Por anos estivemos expandindo nossos esforços para trazer os principais produtos e tecnologias para todo o mundo e o novo posto na Africa do Sul marca uma importatne conquista em nesse plano de unir todos em uma só mente!</p>
             
             <button class="expand-btn" aria-expanded="false" aria-controls="news4">
                 Ler mais
             </button>
             
             <div id="news4" class="extra-content" hidden>
-                <p>isso deve ser outra</p>
+                <p>O posto em [missingData!] na Africa do Sul mostra a conquista em trazer nossa empresa, produtos e serviços para todos os continentes do planeta! Nós nos esforçamos para alcançar o máximo de pessoas o possível, sem excessões! Nosso objetivo é que em alguns anos, todos tenham acesso ao menos a um produto de Karsater!</p>
             </div>
             </article>
 
@@ -109,19 +96,57 @@
             </article>
 
             <article class="techArticle">
-                <h3>Purah Richer visita OMS</h3>
-                <p>Um passo importante para Karsater!</p>
+                <h3>Good Girl</h3>
+                <p>[couldnt find path: [../../Documents/GoodGirlArticle]]</p>
             
             <button class="expand-btn" aria-expanded="false" aria-controls="news6">
                 Ler mais
             </button>
             
             <div id="news6" class="extra-content" hidden>
-                <p>isso deve ser outra</p>
+                <p>{Nota do Manto Azul: &lt!-- para quem estiver colocando referências de sobre Good Girl no site, pare imediatamente! Haverá punições para atitudes de insegurança contra o público! Se for Good Girl fazendo isso, volte para Contenção!--&gt}</p>
             </div>
             </article>
 
         </section>
+    </section>
+    <section class="tecDestaque">
+        <aside class="tecDestaqueText">
+            <h3>Robô em destaque</h3>
+            <h4>Velvet</h4>
+        </aside>
+        <aside class="TecDestaqueContent">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolor non cum architecto blanditiis dolorum similique voluptates! Quos totam a, tenetur repellendus nesciunt maxime consequatur alias? Soluta eius accusantium delectus quae. Inventore eaque animi esse at corporis sed, repudiandae soluta.</p>
+            <a href="">Saiba mais</a>
+        </aside>
+    </section>
+    <section class="trabalheConosco">
+        <aide class="trabalheConoscoText">
+            <h3>Um convite caridoso de Purah!</h3>
+            <p>Faça parte da empresa que mais cresce no mundo com apenas um email!</p>
+        </aide>
+        <form class="trabalheConoscoForms">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="area">Areas de interesse</label>
+            <select name="area" id="area">
+                <option value="" disabled selected>Selecione uma area</option>
+                <option value="pesquisa">Pesquisa Biológica</option>
+                <option value="engenharia">Engenharia robótica</option>
+                <option value="segurança">Segurança Tático</option>
+                <option value="cobaia">Testador de samples</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="mensagemConfirmacao" hidden>
+            <h3>✔ Sua candidatura foi enviada!</h3>
+            <p>Agradecemos seu interesse em trabalhar na KARSATER. Se você for compatível nós saberemos!</p>
+        </div>
     </section>
     <footer>
         <aside class="footerLogo">
@@ -138,6 +163,16 @@
         </aside>
     </footer>
     <script src="../js/btnExpandir.js"></script>
+    <script>
+        const form = document.getElementById('formCandidatura');
+        const mensagem = document.getElementById('mensagemConfirmacao');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // impede o envio padrão do formulário
+            form.style.display = 'none'; // esconde o formulário
+            mensagem.removeAttribute('hidden'); // mostra a mensagem
+        });
+    </script>
 
 </body>
 </html>

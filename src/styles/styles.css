@@ -315,6 +315,10 @@ main{
     padding:5%;
 }
 
+#news6, #news3{
+    right: 30%;
+}
+
 @keyframes topDown{
     0%{
         transform: translateY(10);
@@ -325,6 +329,58 @@ main{
         opacity: 100%;
     }
 }
+
+.tecDestaque{
+    display:grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    padding: 2% 5%;
+    margin: 1% 5%;
+    border: 3px solid var(--shadeAlternativo);
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px var(--shadeAlternativo);
+    background-color: #d96e21;
+}
+
+
+
+/* trabalhe conosco */
+
+.trabalheConosco{
+    display:grid;
+    grid-template-columns: 50% 30%;
+    align-items: center;
+    padding: 2% 5%;
+    margin: 1% 5%;
+    border: 3px solid var(--shadeAlternativo);
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px var(--shadeAlternativo);
+    background-color: #d96e21;
+}
+
+.trabalheConoscoForms{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.2em;
+}
+.trabalheConoscoForms>input{
+    padding:1% 5%;
+    font-size: 1em;
+    width: 100%;
+}
+
+.trabalheConoscoForms>select{
+    padding:1% 5%;
+    font-size: 1em;
+}
+
+.trabalheConoscoForms>button{
+    margin-top: 20px;
+    padding:1% 5%;
+    font-size: 1.2em;
+}
+
 
 /* Footer */
 
