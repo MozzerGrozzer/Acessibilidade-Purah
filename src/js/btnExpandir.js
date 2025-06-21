@@ -1,11 +1,11 @@
 const buttons = document.querySelectorAll('.expand-btn');
 
-  buttons.forEach(button => {
-    button.addEventListener('click', () => {
-      const contentId = button.getAttribute('aria-controls');
+  buttons.forEach(button => { // botões numerados
+    button.addEventListener('click', () => { //usuario clica
+      const contentId = button.getAttribute('aria-controls'); //acha o botão
       const content = document.getElementById(contentId);
 
-      const isExpanded = button.getAttribute('aria-expanded') === 'true';
+      const isExpanded = button.getAttribute('aria-expanded') === 'true'; // mostra o texto
 
       // Alterna o estado
       button.setAttribute('aria-expanded', String(!isExpanded));

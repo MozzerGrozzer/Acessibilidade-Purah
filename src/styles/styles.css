@@ -281,15 +281,15 @@ main{
     align-items: center;
     padding: 2% 5%;
     margin: 1% 5%;
-    border: 3px solid var(--shadePrimaria);
+    border: 3px solid var(--shadeAlternativo);
     border-radius: 20px;
-    box-shadow: 5px 10px 10px var(--shadePrimaria);
+    box-shadow: 5px 10px 10px var(--shadeAlternativo);
     background-color: #d96e21;
 }
 
 .articleGrid{
     display:grid;
-    grid-template-columns: repeat(4, 4fr);
+    grid-template-columns: repeat(3, 1fr);
     gap:5%;
 }
 
@@ -298,6 +298,7 @@ main{
     margin:5%;
     width: 100%;
     background-color: white;
+    position:relative;
 }
 
 .expand-btn{
@@ -306,9 +307,23 @@ main{
 }
 
 .extra-content{
-    width: 30%;
+    animation: topDown linear 0.5s;
+    width: 200%;
+    z-index: 999;
     background:#eec1a1;
-    padding:3%;
+    position: absolute;
+    padding:5%;
+}
+
+@keyframes topDown{
+    0%{
+        transform: translateY(10);
+        opacity: 0%;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 100%;
+    }
 }
 
 /* Footer */
