@@ -411,11 +411,49 @@ main{
     align-items: center;
     text-align: center;
     color: white;
+    border: 1px solid black;
+    padding: 2% 8%;
 }
 
 .ratoCard>h4{
     text-transform: uppercase;
     font-weight: bold;
+}
+
+/* registro genético */
+
+.registroGenetico{
+    display:grid;
+    grid-template-columns: 20% 20% 20%;
+    gap:10%;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 5%;
+    margin: 1% 5%;
+    border: 3px solid var(--shadeAlternativo);
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px var(--shadeAlternativo);
+    background-color: #d96e21;
+}
+
+.registroGeneticoResult{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.registroGeneticoInput>input{
+    padding: 1% 5%;
+    font-size: 1.2em;
+}
+
+#resultadoAssimilado{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin:20%;
+    color: white;
+    text-decoration: underline;
 }
 
 /* Footer */

@@ -67,6 +67,31 @@
             </div>
         </aside>
     </section>
+    <section class="registroGenetico">
+        <aside class="registroGeneticoText">
+            <h3>Registro Genético</h3>
+            <p>O que acontece no contato indevido com o Biocomposto NB-F? Descubra agora com esse pequeno experimento:</p>
+        </aside>
+        <div class="registroGeneticoInput">
+            <label for="inputCodigo">Insira seu código genético: (ex.: ABC-TNC-GNA-TC)</label>
+            <input type="text" id="inputCodigo" maxlength="20">
+            <button id="botaoAssimilar">Iniciar Assimilação</button>
+        </div> 
+        <div class="registroGeneticoResult">
+            <div id="resultadoAssimilado" class="codigo-grid" aria-live="polite"></div>
+        <p id="mensagemAssimilado" hidden>
+        Código assimilado com sucesso! Use proteção devida ao interagir com o Biocomposto NB-F!
+        </p>
+        </div>
+    </section>
+
+    <section class="goodGirl">
+        <aside class="goodGirlText">
+            <h3>O protocolo Good Girl</h3>
+            <p>O protocolo que criou Karsater</p>
+        </aside>
+    </section>
+
     <footer>
         <aside class="footerLogo">
             <img src="../assets/img/icons/KarsaterLogoBranca.svg" alt="logo marca de Karsater">
@@ -81,4 +106,43 @@
             </nav>
         </aside>
     </footer>
+    <script>
+  const botao = document.getElementById('botaoAssimilar');
+  const input = document.getElementById('inputCodigo');
+  const resultado = document.getElementById('resultadoAssimilado');
+  const mensagem = document.getElementById('mensagemAssimilado');
+
+  const destinoFinal = 'BIO-FLX-001-XN'; // Código final do Biocomposto
+
+  botao.addEventListener('click', () => {
+    const codigo = input.value.trim().toUpperCase();
+    resultado.innerHTML = '';
+    mensagem.hidden = true;
+
+    const letras = codigo.padEnd(destinoFinal.length, ' ').split('');
+
+    letras.forEach((letra, i) => {
+      const span = document.createElement('span');
+      span.textContent = letra;
+      resultado.appendChild(span);
+
+      let passos = 0;
+      const loop = setInterval(() => {
+        const randomChar = String.fromCharCode(65 + Math.floor(Math.random() * 26));
+        span.textContent = randomChar;
+
+        passos++;
+        if (passos > 5) {
+          span.textContent = destinoFinal[i] || '';
+          clearInterval(loop);
+        }
+      }, 100 + i * 20);
+    });
+
+    setTimeout(() => {
+      mensagem.hidden = false;
+    }, 2000 + destinoFinal.length * 100);
+  });
+</script>
+
 </body>
