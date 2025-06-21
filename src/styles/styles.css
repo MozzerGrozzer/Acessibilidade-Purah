@@ -272,6 +272,45 @@ main{
     background-color: var(--corSecundaria);
 }
 
+/* tecnologies html */
+
+.tecnologieArticle{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 5%;
+    margin: 1% 5%;
+    border: 3px solid var(--shadePrimaria);
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px var(--shadePrimaria);
+    background-color: #d96e21;
+}
+
+.articleGrid{
+    display:grid;
+    grid-template-columns: repeat(4, 4fr);
+    gap:5%;
+}
+
+.techArticle{
+    padding:10%;
+    margin:5%;
+    width: 100%;
+    background-color: white;
+}
+
+.expand-btn{
+    padding:1%;
+    font-size: 0.9em;
+}
+
+.extra-content{
+    width: 30%;
+    background:#eec1a1;
+    padding:3%;
+}
+
 /* Footer */
 
 footer{
