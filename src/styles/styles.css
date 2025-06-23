@@ -122,6 +122,10 @@ main{
     background: white;  
 }
 
+.aboutUsText>p{
+    width: 70%;
+}
+
 .aboutUsCards{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -134,7 +138,19 @@ main{
     flex-direction: column;
     text-align: center;
     width: 80%;
-    padding:1% 5%;
+    padding:5%;
+    border: 3px solid var(--shadePrimaria);
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px var(--shadePrimaria);
+    background: white;  
+    color:black;
+
+}
+
+.aboutUsCards>a>h3{
+    font-family: "Anton", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 #saibaMaisBTN{
@@ -214,6 +230,40 @@ main{
 
 .confidential{
     color:var(--vermelho);
+}
+
+/* products */
+
+.products{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 5%;
+    margin: 1% 5%;
+    border: 3px solid var(--shadePrimaria);
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px var(--shadePrimaria);
+    background: white;  
+}
+
+.productsGrid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.productsCard{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding:2% 5%;
+    margin:2%;
+    text-align: center;
+    border: 3px solid var(--shadePrimaria);
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px var(--shadePrimaria);
+    background: white;
 }
 
 /* onboard */
@@ -408,10 +458,15 @@ main{
     flex-direction: column;
     padding: 2% 5%;
     margin: 1% 5%;
-    border: 3px solid var(--shadeAlternativo);
+    border: 3px solid black;
     border-radius: 20px;
-    box-shadow: 5px 10px 10px var(--shadeAlternativo);
-    background-color: #d96e21;
+    box-shadow: 5px 10px 10px black;
+    background-color: #f99367;
+}
+
+.ratoStatusText{
+    text-align: center;
+    margin:2% 0px;
 }
 
 .ratoStatusGrid{
@@ -426,6 +481,7 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 130%;
     color: white;
     border: 1px solid black;
     padding: 2% 8%;
@@ -449,7 +505,7 @@ main{
     border: 3px solid var(--shadeAlternativo);
     border-radius: 20px;
     box-shadow: 5px 10px 10px var(--shadeAlternativo);
-    background-color: #d96e21;
+    background-color: #f99367;
 }
 
 .registroGeneticoResult{
