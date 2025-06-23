@@ -41,6 +41,7 @@ header{
     flex-direction: row;
     gap:70px;
     font-size: 1.1em;
+    text-transform: capitalize;
 }
 
 header>button{
@@ -189,7 +190,7 @@ main{
     align-items: center;
 }
 
-.biotechextInfoText{
+.biotechTextInfoText{
     width: 70%;
 }
 
