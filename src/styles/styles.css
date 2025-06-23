@@ -535,14 +535,16 @@ main{
     text-transform: uppercase;
     font-weight: bold;
     color: white;
+    font-size: 1.1em;
     border-top: 1px solid black;
+    font-family: 'anton' sans-serif;
 }
 
 /* registro genético */
 
 .registroGenetico{
     display:grid;
-    grid-template-columns: 20% 20% 20%;
+    grid-template-columns: 20% 40% 20%;
     gap:10%;
     align-items: center;
     justify-content: center;
@@ -552,6 +554,20 @@ main{
     border-radius: 20px;
     box-shadow: 5px 10px 10px var(--shadeAlternativo);
     background-color: #f99367;
+}
+
+.registroGeneticoText>h3{
+    font-size: 2em;
+    font-family: 'anton';
+}
+
+#botaoAssimilar{
+    padding: 1% 5%;
+    font-size: 1.2em;
+    background-color: white;
+    color: var(--corSecundaria);
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 .registroGeneticoResult{
@@ -569,6 +585,7 @@ main{
 #resultadoAssimilado{
     font-size: 1.3em;
     font-weight: bold;
+    font-family: 'anton';
     margin:20%;
     color: white;
     text-decoration: underline;
