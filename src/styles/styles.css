@@ -550,6 +550,14 @@ main{
     font-size: 1.2em;
 }
 
+.registroGeneticoInput>button{
+    padding: 2% 5%;
+    margin-top:10px;
+    background: var(--corSecundaria);
+    color: var(--corPrimaria);
+    font-size: 1.1em;
+}
+
 #resultadoAssimilado{
     font-size: 1.3em;
     font-weight: bold;
