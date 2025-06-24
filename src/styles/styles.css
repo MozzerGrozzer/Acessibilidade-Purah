@@ -610,7 +610,8 @@ footer{
 
 .equipeKarsater{
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
     padding: 4% 5%;
     margin: 1% 5%;
@@ -618,6 +619,39 @@ footer{
     border-radius: 20px;
     box-shadow: 5px 10px 10px var(--shadePrimaria);
     background: white;
+}
+
+.purahRicher{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 5%;
+    gap:4%;
+}
+
+.purahRicher>h3{
+    font-size: 1.5em;
+}
+
+.andrewTorres{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 5%;
+    gap:4%;
+}
+
+.andrewTorres>h3{
+    font-size: 1.5em;
+}
+
+.raulVersales{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 5%;
+    gap:4%;
+}
+
+.raulVersales>h3{
+    font-size: 1.5em;
 }
 
 /* Course curso html*/
