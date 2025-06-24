@@ -604,6 +604,22 @@ footer{
     flex-direction: column;
 }
 
+/* sobre nos html */
+
+/* equipe Karsater */
+
+.equipeKarsater{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4% 5%;
+    margin: 1% 5%;
+    border: 3px solid var(--shadePrimaria);
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px var(--shadePrimaria);
+    background: white;
+}
+
 /* Course curso html*/
 
 /* main */
