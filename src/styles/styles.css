@@ -40,8 +40,14 @@ header{
     align-items: center;
     flex-direction: row;
     gap:70px;
+    
+}
+
+.headerLinks>a{
     font-size: 1.1em;
     text-transform: capitalize;
+    color: black;
+    font-family: "Anton", sans-serif;
 }
 
 header>button{
@@ -110,6 +116,8 @@ main{
     width: 40%;
 }
 
+/* about us */
+
 .aboutUs{
     display:flex;
     flex-direction: column;
@@ -145,7 +153,14 @@ main{
     box-shadow: 5px 10px 10px var(--shadePrimaria);
     background: white;  
     color:black;
+}
 
+.aboutUsCards>a>img{
+    width: 150px;
+    height: 150px;
+    background-color: var(--corSecundaria);
+    border-radius: 50%;
+    padding:5%;
 }
 
 .aboutUsCards>a>h3{
@@ -159,12 +174,13 @@ main{
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 18%;
+    width: 23%;
     height: 50px;
     left:38%;
     margin-top:20px;
-    padding:1% 5%;
-    font-size: 1em;
+    padding:1% 7%;
+    text-transform: capitalize;
+    font-size: 1.3em;
     color:var(--corPrimaria);
     background-color: var(--corSecundaria);
 }
