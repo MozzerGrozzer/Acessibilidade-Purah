@@ -206,8 +206,20 @@ main{
     align-items: center;
 }
 
+.biotechTextInfoText>a{
+    width: 25%;
+    padding: 1% 5%;
+    font-size: 1.2em;
+    background-color: var(--corSecundaria);
+    color: var(--corPrimaria);
+    cursor: pointer;
+}
+
 .biotechTextInfoText{
-    width: 70%;
+    display:flex;
+    flex-direction: column;
+    width: 60%;
+    gap:5%;
 }
 
 .raveNote{
