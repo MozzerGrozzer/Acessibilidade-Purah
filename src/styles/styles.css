@@ -299,6 +299,15 @@ main{
     background: white;
 }
 
+.productsCard>img{
+    width: 300px;
+    padding:10%;
+}
+
+.productsCard>h4{
+    font-size: 1.3em;
+}
+
 /* onboard */
 
 .onboard{
