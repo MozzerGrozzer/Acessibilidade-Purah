@@ -131,6 +131,10 @@ main{
     background: white;  
 }
 
+.aboutUsText{
+    margin-bottom:5%;
+}
+
 .aboutUsText>p{
     width: 70%;
 }
@@ -177,7 +181,7 @@ main{
     width: 23%;
     height: 50px;
     left:38%;
-    margin-top:20px;
+    margin-top:3%;
     padding:1% 7%;
     text-transform: capitalize;
     font-size: 1.3em;
@@ -207,7 +211,7 @@ main{
 }
 
 .biotechTextInfoText>a{
-    width: 25%;
+    width: 23%;
     padding: 1% 5%;
     font-size: 1.2em;
     background-color: var(--corSecundaria);
