@@ -1,5 +1,4 @@
 <img src="./src/assets/img/icons/KarsaterLogoCorBranca.svg" align="center" draggble=false>
-<a href="https://mozzergrozzer.github.io/Acessibilidade-Purah/" target="_blank">https://mozzergrozzer.github.io/Acessibilidade-Purah/</a>
 
 <h1 align="center"> Quais as dificuldades na criação de um design acessível?</h1>
 <img src="./src/assets/img/purahJovemCurso.jpg">
